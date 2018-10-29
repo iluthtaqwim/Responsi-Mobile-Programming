@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Responsi</string>
+    <string name="read_more">Read More</string>
+    <string name="tayang_tanggal">Release Date: </string>
+    <string name="setting">Notification</string>
+    <string name="language">Language</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.iluth.pam.adapter.MovieAdapter">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <ImageView
+                android:id="@+id/imgMovie"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@color/colorAccent"
+                tools:layout_editor_absoluteX="0dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                app:layout_constraintStart_toEndOf="@id/imgMovie"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Ini judul"
+                tools:layout_editor_absoluteX="100dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:maxHeight="80dp"
+                app:layout_constraintStart_toEndOf="@id/imgMovie"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                tools:text="ini deskripsi"
+                tools:layout_editor_absoluteX="100dp" />
+
+            <Button
+                android:id="@+id/btnReadMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/read_more"
+                app:layout_constraintBottom_toBottomOf="@+id/imgMovie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgMovie"
+                tools:layout_editor_absoluteX="100dp" />
+        </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

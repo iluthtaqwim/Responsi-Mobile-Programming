@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MovieDetailActivity">
+
+<ImageView
+    android:id="@+id/imgMovieD"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_alignParentTop="true"
+    tools:src="@color/colorAccent" />
+
+<TextView
+android:id="@+id/tvTitleD"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/imgMovieD"
+android:layout_marginStart="8dp"
+android:layout_marginTop="8dp"
+android:textColor="@android:color/black"
+android:textSize="22sp"
+android:textStyle="bold"
+tools:text="Ini Judul"
+    android:layout_marginLeft="8dp" />
+
+<TextView
+android:id="@+id/tvDateD"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/tvTitleD"
+android:layout_marginStart="8dp"
+android:layout_marginTop="4dp"
+tools:text="tayang tadi malam"
+    android:layout_marginLeft="8dp" />
+
+<RatingBar
+android:id="@+id/rbMovieD"
+style="@style/Base.Widget.AppCompat.RatingBar.Small"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/imgMovieD"
+android:layout_alignParentEnd="true"
+android:layout_marginTop="8dp"
+android:layout_marginEnd="8dp"
+android:numStars="5"
+android:theme="@style/RatingBar"
+tools:rating="4"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="8dp" />
+
+<TextView
+android:id="@+id/tvDescriptionD"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/tvDateD"
+android:layout_marginStart="8dp"
+android:layout_marginTop="8dp"
+android:layout_marginEnd="8dp" />
+
+    </RelativeLayout>

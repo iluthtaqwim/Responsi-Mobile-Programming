@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Responsi</string>
+    <string name="read_more">Lengkap</string>
+    <string name="tayang_tanggal">Tayang tanggal: </string>
+    <string name="setting">Notifikasi</string>
+    <string name="language">Bahasa</string>
+</resources>
